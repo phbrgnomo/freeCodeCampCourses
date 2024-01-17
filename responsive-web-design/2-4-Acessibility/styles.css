@@ -1,47 +1,73 @@
 body {
-    background: #f5f6f7;
-    color: #1b1b32;
-    font-family: Helvetica;
-    margin: 0;
-  }
-  
-  header {
-    width: 100%;
-    height: 50px;
-    background-color: #1b1b32;
-    display: flex;
-  }
-  
-  #logo {
-    width: max(100px, 18vw);
-    background-color: #0a0a23;
-    aspect-ratio: 35 / 4;
-    padding: 0.4rem;
-  }
-  
-  h1 {
-    color: #f1be32;
-    font-size: min(5vw, 1.2em);
-  }
-  
-  nav {
-    width: 50%;
-    max-width: 300px;
-    height: 50px;
-  }
-  
-  nav > ul {
-    display: flex;
-    justify-content: space-evenly;
-  }
+  background: #f5f6f7;
+  color: #1b1b32;
+  font-family: Helvetica;
+  margin: 0;
+}
 
-  h1, h2 {
-    font-family: 'Verdana', sans-serif;
-  }
-  
-  h2 {
-    border-bottom: 4px solid #dfdfe2;
-  }
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #1b1b32;
+  display: flex;
+}
+
+#logo {
+  width: max(100px, 18vw);
+  background-color: #0a0a23;
+  aspect-ratio: 35 / 4;
+  padding: 0.4rem;
+}
+
+h1 {
+  color: #f1be32;
+  font-size: min(5vw, 1.2em);
+}
+
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+
+/* The > operator selects the second element inside the first element */
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav > ul > li {
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+/* :hover changes the element properties whent he the mouse is over it */
+nav > ul > li:hover {
+  background-color: #dfdfe2;
+  cursor: pointer;
+  color: #1b1b32;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: Verdana, Tahoma;
+}
+
+h2 {
+  border-bottom: 4px solid #dfdfe2;
+}
+
+/* The pseudo-element ::before add a repeated text value to the <p> elements */
+p::before {
+  content: "Question #";
+}
 
 /* This settings hides the sr-only class */
 .sr-only {

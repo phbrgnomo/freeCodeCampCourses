@@ -20,5 +20,3 @@ Comments added to the code are my own, and added for learning pourposes.
 2. **[CSS-Flexbox](./2-2-CSS-Flexbox/)**: A study of Flexbox settings
 3. **[Typography](./2-3-Typography)**: A study of CSS Typography build a Nutrition Label
 4. **[Acessibility](./2-4-Acessibility)**: A study of Acessibility features
-
-Next
